@@ -3,10 +3,6 @@
 
 High perfomance SOFTWARE for hardware guard
 ----
-# TIERSA™ Dynamic Mitigator v1.0 Commercial
-> **Autonomous, Air-Gapped Power & Thermal Mitigation Middleware for Distributed High-Density AI Infrastructure (NVIDIA Blackwell & Hopper Platforms)**
----
-
 ## 🛰️ Project Overview
 **TIERSA™ Dynamic Mitigator** is a production-grade, highly optimized middleware architecture engineered to eliminate systemic failure modes in ultra-high-density enterprise AI compute clusters. 
 
