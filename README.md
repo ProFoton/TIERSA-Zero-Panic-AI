@@ -6,9 +6,7 @@ High perfomance SOFTWARE for hardware guard
 ## 🛰️ Project Overview
 **TIERSA™ Zero-Panic AI** is a production-grade, highly optimized middleware architecture engineered to eliminate systemic failure modes in ultra-high-density enterprise AI compute clusters. 
 
-Modern GPU frameworks (such as NVIDIA Blackwell B200 1000W TDP matrices) operate under extreme localized transient power boundaries, driving the global AI cluster Annual Failure Rate (AFR) to a staggering **9%**. TIERSA acts as an intelligent, software-defined fuse, predicting and mitigating Voltage Regulator Module (VRM) phase stress and High Bandwidth Memory (HBM) degradation *sub-millisecond before thermal or electrical breakdown occurs*.
-
-Instead of relying on reactive hardware throttling (DVFS), which introduces unacceptable context latencies, TIERSA couples a predictive **Two-Dimensional Kalman Filter** tracking core-to-VRM thermal state vectors with an upstream **Asynchronous ASGI Request Mutation Proxy**, dynamically applying **Context Window Truncation** ($O(N^2)$ attention complexity self-reduction) to stabilize the hardware while keeping the system 100% online.
+Modern GPU frameworks (such as NVIDIA Blackwell B200 1000W TDP matrices) operate under extreme localized transient power boundaries, driving the global AI cluster Annual Failure Rate (AFR) to a staggering **9%**. TIERSA™ acts as an intelligent, software-defined fuse, predicting and mitigating Voltage Regulator Module (VRM) phase stress and High Bandwidth Memory (HBM) degradation *sub-millisecond before thermal or electrical breakdown occurs*.
 
 ---
 
@@ -34,7 +32,8 @@ To evaluate absolute resource efficiency, the runtime environment was intentiona
 The deployment architecture is strictly decoupled into two isolated secure execution runtimes:
 
 1. **The Mitigation Core Engine (`T-RUST`)**: An asynchronous Linux-native daemon (`tokio`) deployed directly within the target environment (Ubuntu/WSL2 or Bare-Metal clusters), bound to socket `0.0.0.0:8000` to capture telemetry metrics globally.
-2. **The GUI Control Center**: A standalone native Windows 10/11 binary compiled via pure Rust (`egui/eframe`), implementing a bespoke *Carbon Night* theme, providing isolated cryptographic license enforcement (`*.key` manifests), and administrative secure overrides.
+
+2. **The GUI Control Center**: A standalone native Windows 10/11 binary compiled via pure Rust.
 
 ### Core Strategic Safeguards (Air-Gap Sovereign State):
 * **No Internet Footprint:** Validations, contract evaluations, and 2D Kalman monitoring loops execute on a 100% local hardware layer.
