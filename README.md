@@ -1,4 +1,4 @@
-# TIERSA™-Dynamic-Mitigator-
+# TIERSA™-Dynamic-Mitigator
 High perfomance SOFTWARE for hardware guard
 ----
 # TIERSA™ Dynamic Mitigator v1.0 Commercial
