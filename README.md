@@ -1,4 +1,6 @@
-# TIERSA™ Dynamic Mitigator
+# TIERSA™: Zero-Panic AI
+> **Autonomous, Air-Gapped Power & Thermal Mitigation Middleware for Distributed High-Density AI Infrastructure (NVIDIA Blackwell & Hopper Platforms)**
+
 High perfomance SOFTWARE for hardware guard
 ----
 # TIERSA™ Dynamic Mitigator v1.0 Commercial
