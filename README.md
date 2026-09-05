@@ -57,5 +57,5 @@ To eliminate onboarding friction for enterprise DevOps and data center architect
 ## 🏁 Technical Co-Innovation & Evaluation Partnerships
 We are looking for technical partnerships to execute pilot deployments across enterprise AI sub-clusters. For technical inquiries, Whitepaper distribution requests, or to obtain an individual cryptographic license key manifest tailored to your custom network boundaries, please contact:
 
-* **Lead Infrastructure Architect:** [Ваше Имя / Название Компании]
-* **Corporate Coordinates:** [Ссылка на LinkedIn / Электронная почта]
+* **Lead Infrastructure Architect:** Evgeniy Baidikov, TIERSA Sys
+* **Corporate Coordinates:** https://www.linkedin.com/in/evgeniy-baidikov-1a0462434/ dantesevg@gmail.com
