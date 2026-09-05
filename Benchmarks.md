@@ -53,4 +53,3 @@ Total:          0     16      6.4       16  1051
 2. **Concurrent Metric Ingestion:** Under a concurrency level of 150, the mean time per request across all concurrent tasks is just **0.109 ms**.
 3. **Enterprise Scalability:** If this core architecture can scale under heavy production-grade workloads over a standard USB mobile modem, its deployment within high-bandwidth **Azure** or **NVIDIA DGX** fabric ecosystems will be revolutionary.
 ---
-Хотите, я помогу составить следующий блок для `README.md` — например, **краткое описание архитектуры (How it works)**, объясняющее, как именно софт успевает изолировать микротермические аномалии на такой скорости?
