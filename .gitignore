@@ -1,0 +1,16 @@
+# Секретные ключи и файлы лицензий
+*.key
+License.key
+license.key
+
+# Бинарники и исполняемые файлы (их загружаем только через Releases)
+*.exe
+*.bin
+tiersa-mitigator
+build/
+target/
+
+# Логи и временные файлы системы
+*.log
+.DS_Store
+Thumbs.db
