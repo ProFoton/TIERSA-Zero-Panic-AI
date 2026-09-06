@@ -1,30 +1,34 @@
 # END-USER LICENSE AGREEMENT (EULA)
-## Программный комплекс превентивной защиты и контроля ИИ-инфраструктуры «TIERSA™ Zero-Panic AI» v1.0 Commercial
-**Дата вступления в силу: 5 сентября 2026 года**
+### Preventive Protection and Control Software Suite "TIERSA™ Zero-Panic AI" v1.0 Commercial
+**Effective Date: September 5, 2026**
 
-Внимательно прочитайте настоящее Лицензионное соглашение (далее — «Лицензия»), прежде чем производить развертывание, компиляцию или запуск программного обеспечения **TIERSA™ Zer0-Panic AI** (далее — «ПО»). Использование ПО означает ваше полное и безоговорочное согласие со всеми пунктами настоящего соглашения.
+Please read this End-User License Agreement ("License") carefully before deploying, compiling, or running the TIERSA™ Zero-Panic AI software ("Software"). Using the Software constitutes your full and unconditional acceptance of all terms of this agreement.
 
-### 1. ПРЕДМЕТ ЛИЦЕНЗИИ И ПРАВА СОБСТВЕННОСТИ
-*   **1.1. Интеллектуальная собственность**: Настоящее ПО исполняемые бинарные файлы Windows exe, серверные модули телеметрии и алгоритмические блоки превентивной защиты, являются объектом интеллектуальной собственности и защищены законодательством об авторских правах.
-*   **1.2. Предоставление прав**: Автор (Правообладатель) предоставляет Пользователю неисключительное, непередаваемое право (Лицензию) на использование ПО в коммерческих и технологических целях внутри изолированной локальной сети Лицензиата.
+## 1. SUBJECT OF THE LICENSE AND OWNERSHIP RIGHTS
+* **1.1. Intellectual Property:** This Software, including Windows executable binary files (.exe), server telemetry modules, and algorithmic preventive protection blocks, is the intellectual property of the Author and is protected by copyright laws.
+* **1.2. Grant of Rights:** The Author (Rightsholder) grants the User a non-exclusive, non-transferable right (License) to use the Software for commercial and technological purposes within the isolated local network of the Licensee.
 
-### 2. ПРАВА И ОГРАНИЧЕНИЯ ПОЛЬЗОВАТЕЛЯ
-*   **2.1. Разрешенное использование**:
-    *   Установка и запуск ПО на локальных рабочих станциях под управлением ОС Windows 10/11 и Linux-окружения (WSL2).
-    *   Автономный выпуск, продление и администрирование цифровых криптографических ключей лицензий (`*.key`) для управления ИИ-кластерами (включая архитектуры класса NVIDIA Blackwell).
-    *   Использование встроенных алгоритмов защиты цепей питания VRM и температурного мониторинга в автоматическом режиме.
-*   **2.2. Строгие ограничения**:
-    *   Запрещается декомпиляция, обратный инжиниринг (reverse engineering) или модификация скомпилированных бинарных файлов без прямого письменного согласия Правообладателя.
-    *   Запрещается передача, аренда, сублицензирование или распространение ПО третьим лицам за пределами периметра авторизованной локальной сети.
-    *   Запрещается обход или фальсификация криптографического механизма отзыва лицензий (включая несанкционированное удаление метаданных из консоли `REVOKED ARCHIVE`).
+## 2. USER RIGHTS AND RESTRICTIONS
+* **2.1. Permitted Use:**
+  - Installation and execution of the Software on local workstations running Windows 10/11 and Linux environments via WSL2.
+  - Autonomous issuance, renewal, and administration of digital cryptographic license keys (`*.key`) for managing AI clusters, including NVIDIA Blackwell class architectures.
+  - Automatic utilization of built-in VRM power circuit protection and thermal monitoring algorithms.
+* **2.2. Strict Restrictions:**
+  - Decompilation, reverse engineering, or modification of the compiled binary files is strictly prohibited without the express written consent of the Rightsholder.
+  - Transfer, leasing, sublicensing, or distribution of the Software to third parties outside the perimeter of the authorized local network is strictly prohibited.
+  - Bypassing or falsifying the cryptographic license revocation mechanism, including the unauthorized deletion of metadata from the `REVOKED ARCHIVE` console, is strictly prohibited.
 
-### 3. АВТОНОМНОСТЬ И КОНФИДЕНЦИАЛЬНОСТЬ ДАННЫХ
-*   **3.1. Технологический суверенитет (Air-Gap)**: ПО спроектировано в режиме абсолютной изоляции. Все операции по валидации ключей, расчету и анализу телеметрии происходят на 100% локально, без обращения к внешним серверам через сеть Интернет.
-*   **3.2. Защита коммерческой тайны**: Вендор гарантирует, что ПО не собирает, не передает наружу и не архивирует коммерческие данные Лицензиата, логи вычислений или параметры защищаемых графических процессоров.
+## 3. AUTONOMY AND DATA PRIVACY
+* **3.1. Technological Sovereignty (Air-Gap):** The Software is designed to operate in absolute isolation. All key validation, calculation, and telemetry analysis operations occur 100% locally, without making external internet connections.
+* **3.2. Commercial Secret Protection:** The Vendor guarantees that the Software does not collect, transmit externally, or archive the Licensee's commercial data, compute logs, or parameters of the protected GPUs.
 
-### 4. ОГРАНИЧЕНИЕ ОТВЕТСТВЕННОСТИ (ОТКАЗ ОТ ГАРАНТИЙ)
-*   **4.1. Условия предоставления**: ПО предоставляется на условиях «как есть» (AS IS). Правообладатель не гарантирует, что ПО полностью отвечает субъективным ожиданиям Пользователя или будет работать непрерывно при нарушении базовых требований к оборудованию.
-*   **4.2. Исключение убытков**: Правообладатель не несет ответственности за любые прямые или косвенные убытки, включая упущенную выгоду, простой оборудования или повреждение вычислительных мощностей, возникшие в результате некорректной настройки сетевого моста порт-прокси (`0.0.0.0:8000`) или ручного игнорирования превентивных алармов системы телеметрии.
+## 4. LIMITATION OF LIABILITY (DISCLAIMER OF WARRANTIES)
+* **4.1. Terms of Provision:** The Software is provided on an "AS IS" basis. The Rightsholder does not warrant that the Software will fully meet the User's subjective expectations or operate uninterrupted if baseline hardware requirements are violated.
+* **4.2. Exclusion of Damages:** The Rightsholder shall not be liable for any direct or indirect damages, including lost profits, equipment downtime, or damage to computing capacities resulting from incorrect configuration of the network port-proxy bridge (`0.0.0.0:8000`) or manual disregard of preventive telemetry system alarms.
 
-### 5. ПРЕКРАЩЕНИЕ ДЕЙСТВИЯ 
-*   **5.1. Прекращение действия**: Главы 1, 2 Лицензии действует бессрочно относительно всех юрисдикций мира. В случае нарушения Пользователем любого из пунктов 1 или 2 данного соглашения, на Лицензиата налогается штраф в размере цены годового контракта на обслуживание 1000 нод GPU равной пятиста тысячам долларов США - $500 000. 
+## 5. TERMINATION AND PENALTIES
+* **5.1. Termination & Penalties:** Chapters 1 and 2 of this License operate indefinitely across all global jurisdictions. In the event of a breach by the User of any clause in Section 1 or Section 2 of this agreement, a penalty shall be imposed on the Licensee in the amount of the annual maintenance contract fee for 1,000 GPU nodes, equal to Five Hundred Thousand US Dollars ($500,000).
+
+---
+**Contact:** dantesevg@gmail.com
+
