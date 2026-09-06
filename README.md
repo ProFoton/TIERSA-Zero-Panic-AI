@@ -1,3 +1,4 @@
+[Читать на русском языке 🇷🇺](README.ru.md)
 # TIERSA™: Zero-Panic AI
 > **Autonomous, Air-Gapped Power & Thermal Mitigation Middleware for Distributed High-Density AI Infrastructure (NVIDIA Blackwell & Hopper Platforms)**
 
