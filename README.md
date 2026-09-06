@@ -42,13 +42,39 @@ The deployment architecture is strictly decoupled into two isolated secure execu
 
 ---
 
-## 📦 Proof of Concept (PoC) Isolated Evaluation Key
-To eliminate onboarding friction for enterprise DevOps and data center architecture teams, we provide a secure, production-grade **3-Day Isolated Evaluation Kit** restricted to an isolated **100-GPU sub-cluster** using a standardized zero-knowledge blind network mask (`127.0.0.0/8`).
+## 🛡️ Security, Licensing & Air-Gap Autonomy
 
-### Repository Directory Guide:
-* `/documentation` - Technical Whitepaper releases (English / Russian editions).
-* `/benchmarks` - Raw transaction output logs tracking the historical 10M stress-test execution.
-* `/releases` - Compiled standalone `tiersa_sla_keeper.exe` binary package incorporating signature visual icons. *(Source Rust code `.rs` is omitted to preserve commercial confidentiality).*
+1. **Absolute Air-Gap (Sovereign Infrastructure):** The software runs inside a 100% isolated local network loop. License key (`*.key`) validation and telemetry metrics are processed entirely on-device (On-Device AI) without any internet footprint. No sensitive data or LLM weights are ever transmitted externally.
+2. **Terms of Use:** The product is distributed as pre-compiled, sterilized binary payloads (Windows .exe / Linux) and is protected by the strict terms of the **[EULA (LICENSE.md)](LICENSE.md)**. Reverse-engineering, decompilation, and slicing are strictly prohibited.
+
+---
+
+## 🚀 Quick Start (1-Second Deployment)
+
+The T-RUST core engine is heavily optimized via deep LLVM-stripping. The executable file is completely purged of debug artifacts, footprints, and overhead, resulting in a featherweight size of **only ~1 MB**—perfect for rapid hot-deployment on sovereign cluster nodes.
+
+### 1. Download the Core
+Download the pre-compiled `tiersa_core` binary directly from the official **Releases** tab of this GitHub repository (Stable version `v3.0-stable`).
+
+### 2. Request Your Sovereign License Key
+To protect core intellectual property and prevent unauthorized cluster scaling, the binary does not ship with an embedded trial activation key. Initial boot without a key triggers an immediate `ACCESS > DENIED` network shield layout.
+
+To obtain your dedicated **3-Day Isolated Evaluation Kit license** mapped to your target cluster environment (restricted to a 100-GPU sub-cluster), contact the Lead Architect directly.
+
+### 3. Deploy the Key
+Place the received authorization file in the root directory alongside the binary:
+```bash
+~/T-RUST/
+├── tiersa_core        # Downloaded core engine binary (~1 MB)
+└── Named_license.key  # Your personal validation key (provided upon request)
+```
+
+### 4. Production Launch
+Initialize the proxy daemon inside your cluster OS (Ubuntu/WSL2/Bare-Metal):
+```bash
+chmod +x tiersa_core && ./tiersa_core
+```
+Once the RSA-PSS (SHA-256) signature is cryptographically verified, the system displays the Enterprise signature banner and exposes the OpenMetrics scraping target on port `0.0.0.0:8000`.
 
 ---
 
@@ -56,4 +82,5 @@ To eliminate onboarding friction for enterprise DevOps and data center architect
 We are looking for technical partnerships to execute pilot deployments across enterprise AI sub-clusters. For technical inquiries, Whitepaper distribution requests, or to obtain an individual cryptographic license key manifest tailored to your custom network boundaries, please contact:
 
 * **Lead Infrastructure Architect:** Evgeniy Baidikov, TIERSA Sys
-* **Corporate Coordinates:** https://www.linkedin.com/in/evgeniy-baidikov-1a0462434/ dantesevg@gmail.com
+* **Email / Signal:** dantesevg@gmail.com
+* **Corporate Coordinates:** https://linkedin.com
