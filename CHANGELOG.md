@@ -7,7 +7,7 @@ All notable changes to the TIERSA™ core will be documented in this file.
 
 ## - 2026-09-06
 ### Added
-- Initial core release of TIERSA™ Dynamic Mitigator.
+- Initial core release of TIERSA™ Zero-Panic AI.
 - High-performance web metrics ingestion endpoint (`/metrics`).
 - Preventive telemetry structure for GPU, HBM, CPU, CoWoS, and VRM wear.
 
