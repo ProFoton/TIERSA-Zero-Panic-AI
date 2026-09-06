@@ -1,11 +1,11 @@
 [Читать на русском языке 🇷🇺](README.ru.md)
-# TIERSA™: Zero-Panic AI
+# TIERSA™: Zer0-Panic AI
 > **Autonomous, Air-Gapped Power & Thermal Mitigation Middleware for Distributed High-Density AI Infrastructure (NVIDIA Blackwell & Hopper Platforms)**
 
 High perfomance SOFTWARE for hardware guard
 ----
 ## 🛰️ Project Overview
-**TIERSA™ Zero-Panic AI** is a production-grade, highly optimized middleware architecture engineered to eliminate systemic failure modes in ultra-high-density enterprise AI compute clusters. 
+**TIERSA™ Zer0-Panic AI** is a production-grade, highly optimized middleware architecture engineered to eliminate systemic failure modes in ultra-high-density enterprise AI compute clusters. 
 
 Modern GPU frameworks (such as NVIDIA Blackwell B200 1000W TDP matrices) operate under extreme localized transient power boundaries, driving the global AI cluster Annual Failure Rate (AFR) to a staggering **9%**. TIERSA™ acts as an intelligent, software-defined fuse, predicting and mitigating Voltage Regulator Module (VRM) phase stress and High Bandwidth Memory (HBM) degradation *sub-millisecond before thermal or electrical breakdown occurs*.
 
