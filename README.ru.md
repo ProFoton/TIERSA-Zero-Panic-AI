@@ -2,12 +2,18 @@
 
 <div align="center">
 
-![Language](https://shields.io)
-![Kernel](https://shields.io)
-![Environment](https://shields.io)
-![Security](https://shields.io)
-![Binary Size](https://shields.io)
-![License](https://shields.io)
+<table>
+  <tr>
+    <td bgcolor="#E06611"><b>📦 LANGUAGE:</b> Rust 1.75+</td>
+    <td bgcolor="#111111"><b>⚡ ENGINE:</b> Tokio Async</td>
+    <td bgcolor="#0052CC"><b>🌐 ENV:</b> Bare-Metal | Linux</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CC0000"><b>🔒 SECURITY:</b> Air-Gapped</td>
+    <td bgcolor="#28A745"><b>💾 SIZE:</b> ~1 MB (Stripped)</td>
+    <td bgcolor="#6F42C1"><b>📄 LICENSE:</b> Proprietary EULA</td>
+  </tr>
+</table>
 
 </div>
 
