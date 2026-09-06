@@ -1,3 +1,5 @@
+[Читать на русском](README.ru.md)
+
 # END-USER LICENSE AGREEMENT (EULA)
 ### Preventive Protection and Control Software Suite "TIERSA™ Zero-Panic AI" v1.0 Commercial
 **Effective Date: September 5, 2026**
