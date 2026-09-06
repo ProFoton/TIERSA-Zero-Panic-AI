@@ -1,3 +1,5 @@
+[Read in English 🇺🇸](LICENSE.md)
+
 # END-USER LICENSE AGREEMENT (EULA)
 ## Программный комплекс превентивной защиты и контроля ИИ-инфраструктуры «TIERSA™ Zero-Panic AI» v1.0 Commercial
 **Дата вступления в силу: 5 сентября 2026 года**
