@@ -63,37 +63,6 @@ The deployment architecture is strictly decoupled into two isolated secure execu
 
 ---
 
-```mermaid
-graph TD
-    %% Стилизация узлов
-    classDef hardware fill:#444,stroke:#333,stroke-width:2px,color:#fff;
-    classDef core fill:#E06611,stroke:#b54f07,stroke-width:2px,color:#fff;
-    classDef secure fill:#CC0000,stroke:#990000,stroke-width:2px,color:#fff;
-    classDef client fill:#0052CC,stroke:#003d99,stroke-width:2px,color:#fff;
-
-    %% Физический уровень (Железо)
-    subgraph HW_Layer ["⚠️ ФИЗИЧЕСКИЙ УРОВЕНЬ (DATA CENTER)"]
-        A[NVIDIA Blackwell / Hopper]:::hardware -->|Импульсные скачки тока / Нагрев| B[VRM / CoWoS / CPU Подложка]:::hardware
-    end
-
-    %% Изолированное ядро T-RUST
-    subgraph T_RUST ["🛡️ MITIGATION ENGINE (T-RUST ДЕМОН)"]
-        B -->|Снятие низкоуровневой телеметрии| C[Асинхронный буфер Tokio Async]:::core
-        C -->|Потокобезопасная передача| D[2D-Фильтр Калмана]:::core
-        D -->|Прогноз термического всплеска| E{Zero-Panic Алгоритм}:::core
-        E -->|Превентивный сигнал| F[Power Capping / Сброс частот памяти]:::secure
-        F -->|Мгновенная стабилизация| A
-    end
-
-    %% Внешний слой управления
-    subgraph External_Layer ["🖥️ УПРАВЛЕНИЕ И МОНИТОРИНГ (AIR-GAPPED)"]
-        E -.->|Криптографический лог RSA-PSS| G[Локальная база данных]:::client
-        G -->|Отображение в реальном времени| H[Нативный GUI-Интерфейс Windows]:::client
-    end
-```
-
-
-
 ## 🛡️ Security, Licensing & Air-Gap Autonomy
 
 1. **Absolute Air-Gap (Sovereign Infrastructure):** The software runs inside a 100% isolated local network loop. License key (`*.key`) validation and telemetry metrics are processed entirely on-device (On-Device AI) without any internet footprint. No sensitive data or LLM weights are ever transmitted externally.
