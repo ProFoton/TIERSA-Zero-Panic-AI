@@ -1,5 +1,18 @@
 [Read in English 🇺🇸](README.md)
 
+<div align="center">
+
+![Language](https://shields.io)
+![Kernel](https://shields.io)
+![Environment](https://shields.io)
+![Security](https://shields.io)
+![Binary Size](https://shields.io)
+![License](https://shields.io)
+
+</div>
+
+---
+
 # TIERSA™: Zer0-Panic AI
 > **ЗАЩИТА ИИ-НОД ОТ КРИТИЧЕСКИХ СБОЕВ И ВЫГОРАНИЯ КРЕМНИЯ**
 
