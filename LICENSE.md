@@ -1,7 +1,7 @@
 [Читать на русском](LICENSE.ru.md)
 
 # END-USER LICENSE AGREEMENT (EULA)
-### Preventive Protection and Control Software Suite "TIERSA™ Zer0-Panic AI" v1.0 Commercial
+### Preventive Protection and Control Software Suite "TIERSA™ Zer0-Panic AI" v3.0-stable
 **Effective Date: September 5, 2026**
 
 Please read this End-User License Agreement ("License") carefully before deploying, compiling, or running the TIERSA™ Zer0-Panic AI software ("Software"). Using the Software constitutes your full and unconditional acceptance of all terms of this agreement.
