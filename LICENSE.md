@@ -1,4 +1,4 @@
-[Читать на русском](README.ru.md)
+[Читать на русском](LICENSE.ru.md)
 
 # END-USER LICENSE AGREEMENT (EULA)
 ### Preventive Protection and Control Software Suite "TIERSA™ Zero-Panic AI" v1.0 Commercial
