@@ -4,7 +4,6 @@
 ## - 2026-9-7
 All notable changes to the TIERSA™ core will be documented in this file.
 
-## - 2026-9-7
 # 🚀 TIERSA™ Core v4.0.0 "Platinum-Golden" — Official Release Notes
 
 We are proud to announce the final production release of **TIERSA™: Zer0-Panic AI** (v4.0.0 Platinum). This release marks a monumental evolution from the v3.5-stable branch, morphing a local node monitoring agent into a complete, non-intrusive, predictive hardware insurance middleware for next-generation AI infrastructures (**NVIDIA Blackwell B200/B300** and **Google TPU Trillium/Ironwood**).
