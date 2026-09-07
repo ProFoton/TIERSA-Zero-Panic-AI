@@ -23,14 +23,14 @@
 
 ---
 
-# TIERSA™: Wolfram Carbide v5.0.0-GOLDEN
+# TIERSA™: Tungsten Carbide v5.0
 > **Autonomous, Self-Learning Power & Thermal Mitigation Middleware for Distributed High-Density AI Infrastructure (NVIDIA Blackwell B200/B300 & Google TPU Trillium Platforms)**
 
 High performance SOFTWARE for hardware guard
 ----
 
 ## 🛰️ Project Overview
-**TIERSA™ Wolfram Carbide v5.0** is a production-grade, highly optimized infrastructure middleware architecture engineered to eliminate systemic failure modes and physical degradation in ultra-high-density enterprise AI compute clusters. 
+**TIERSA™: Tungsten Carbide v5.0** is a production-grade, highly optimized infrastructure middleware architecture engineered to eliminate systemic failure modes and physical degradation in ultra-high-density enterprise AI compute clusters. 
 
 Modern high-density accelerator frameworks, such as the **NVIDIA Blackwell B300 (1000W+ TDP)** and **Google TPU Trillium (v6e/v7x Ironwood)** matrices, operate under punishing transient power boundaries, driving the global AI cluster Annual Failure Rate (AFR) to a staggering **9%**. TIERSA™ acts as an intelligent, software-defined body armor, predicting and mitigating Voltage Regulator Module (VRM) phase stress, High Bandwidth Memory (HBM3e) thermal decay, and CoWoS interposer degradation *sub-millisecond before hardware or electrical breakdown occurs*.
 
