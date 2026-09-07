@@ -27,13 +27,3 @@ All titles, international copyrights, patents, trade secrets, and intellectual p
 
 ### 5. TERMINATION
 This License terminates automatically and immediately without notice if you fail to comply with any provision of this agreement or if your designated validation key manifest expires. Upon termination, you must destroy all copies of the software binary.
-
----
-
-# 🇷🇺 КОРПОРАТИВНОЕ ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ (EULA) TIERSA™
-
-**Авторские права © 2026. Все права защищены.**
-**Автор и Главный Архитектор:** Евгений Байдиков (ProFoton / TIERSA Sys).
-**Связь:** dantesevg@gmail.com
-
-Настоящее программное обеспечение предоставляется по лицензии, а не продается. Скомпилированный бинарный файл `t_rust_core` является коммерческой тайной и закрытой проприетарной интеллектуальной собственностью. Использование программы разрешено исключительно на основе криптографического ключа авторизации (`*.key`). Любые попытки декомпиляции, реверс-инжиниринга, копирования кода или обхода лимитов сетевого периметра квалифицируются как прямое нарушение международных законов о защите авторских прав и влекут за собой немедленный отзыв лицензии.
