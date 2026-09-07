@@ -1,36 +1,39 @@
-[Читать на русском](LICENSE.ru.md)
+# 🔒 END-USER LICENSE AGREEMENT (EULA) FOR TIERSA™ TUNGSTEN CARBIDE v5.0
 
-# END-USER LICENSE AGREEMENT (EULA)
-### Preventive Protection and Control Software Suite "TIERSA™ Zer0-Panic AI" v3.0-stable
-**Effective Date: September 5, 2026**
+**Copyright © 2026. All Rights Reserved.**
+**Author & Core Architect:** Evgeniy Baidikov (ProFoton / TIERSA Sys).
+**Corporate Coordinates:** dantesevg@gmail.com
 
-Please read this End-User License Agreement ("License") carefully before deploying, compiling, or running the TIERSA™ Zer0-Panic AI software ("Software"). Using the Software constitutes your full and unconditional acceptance of all terms of this agreement.
+IMPORTANT: PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE DOWNLOADING, INSTALLING, OR USING THE SOFTWARE.
 
-## 1. SUBJECT OF THE LICENSE AND OWNERSHIP RIGHTS
-* **1.1. Intellectual Property:** This Software, including Windows executable binary files (.exe), server telemetry modules, and algorithmic preventive protection blocks, is the intellectual property of the Author and is protected by copyright laws.
-* **1.2. Grant of Rights:** The Author (Rightsholder) grants the User a non-exclusive, non-transferable right (License) to use the Software for commercial and technological purposes within the isolated local network of the Licensee.
-
-## 2. USER RIGHTS AND RESTRICTIONS
-* **2.1. Permitted Use:**
-  - Installation and execution of the Software on local workstations running Windows 10/11 and Linux environments via WSL2.
-  - Autonomous issuance, renewal, and administration of digital cryptographic license keys (`*.key`) for managing AI clusters, including NVIDIA Blackwell class architectures.
-  - Automatic utilization of built-in VRM power circuit protection and thermal monitoring algorithms.
-* **2.2. Strict Restrictions:**
-  - Decompilation, reverse engineering, or modification of the compiled binary files is strictly prohibited without the express written consent of the Rightsholder.
-  - Transfer, leasing, sublicensing, or distribution of the Software to third parties outside the perimeter of the authorized local network is strictly prohibited.
-  - Bypassing or falsifying the cryptographic license revocation mechanism, including the unauthorized deletion of metadata from the `REVOKED ARCHIVE` console, is strictly prohibited.
-
-## 3. AUTONOMY AND DATA PRIVACY
-* **3.1. Technological Sovereignty (Air-Gap):** The Software is designed to operate in absolute isolation. All key validation, calculation, and telemetry analysis operations occur 100% locally, without making external internet connections.
-* **3.2. Commercial Secret Protection:** The Vendor guarantees that the Software does not collect, transmit externally, or archive the Licensee's commercial data, compute logs, or parameters of the protected GPUs.
-
-## 4. LIMITATION OF LIABILITY (DISCLAIMER OF WARRANTIES)
-* **4.1. Terms of Provision:** The Software is provided on an "AS IS" basis. The Rightsholder does not warrant that the Software will fully meet the User's subjective expectations or operate uninterrupted if baseline hardware requirements are violated.
-* **4.2. Exclusion of Damages:** The Rightsholder shall not be liable for any direct or indirect damages, including lost profits, equipment downtime, or damage to computing capacities resulting from incorrect configuration of the network port-proxy bridge (`0.0.0.0:8000`) or manual disregard of preventive telemetry system alarms.
-
-## 5. TERMINATION AND PENALTIES
-* **5.1. Termination & Penalties:** Chapters 1 and 2 of this License operate indefinitely across all global jurisdictions. In the event of a breach by the User of any clause in Section 1 or Section 2 of this agreement, a penalty shall be imposed on the Licensee in the amount of the annual maintenance contract fee for 1,000 GPU nodes, equal to Five Hundred Thousand US Dollars ($500,000).
+By downloading, installing, or executing the pre-compiled binary (`t_rust_core` or `tiersa_core`), you explicitly agree to be bound by the terms and conditions of this proprietary End-User License Agreement (EULA). If you do not agree to these terms, you are strictly prohibited from using the software.
 
 ---
-**Contact:** dantesevg@gmail.com
 
+### 1. LICENSE GRANT & BOUNDARIES
+This Software is licensed, not sold. Subject to a validated cryptographic license manifest (`*.key`) issued directly by the Author, you are granted a non-exclusive, non-transferable, fully restricted, and temporary right to deploy the pre-compiled binary solely within the explicitly authorized network boundaries and allocated GPU/TPU sub-cluster capacity constraints.
+
+### 2. STRICT PROHIBITIONS & COMMERCIAL PROTECTION
+Under the terms of this EULA, the Licensee and any third party are strictly prohibited from executing the following actions:
+* **No Slicing or Decompilation:** You shall not reverse-engineer, decompile, disassemble, slice, modify, decrypt, or attempt to extract the source code or algorithmic structures from the compiled binary.
+* **No Unauthorized Replication:** You shall not copy, clone, redistribute, rent, sub-license, host as a managed service, or commercially exploit this software independent of a valid commercial contract with the Author.
+* **No Capacity Bypassing:** Any attempt to tamper with the built-in RSA-PSS cryptographic validation loop or bypass the designated node capacity limit will trigger immediate and automatic revocation of this license.
+
+### 3. AIR-GAP DATA PRIVACY & COMPLIANCE
+The Software operates on a strict, 100% on-device, local network loop architecture (Air-Gapped). The Author guarantees that the Software contains no internet-bound telemetry, does not transmit Large Language Model (LLM) weights, and operates in absolute compliance with sovereign data storage protocols.
+
+### 4. INTELLECTUAL PROPERTY & AUDITING RIGHTS
+All titles, international copyrights, patents, trade secrets, and intellectual property rights inside the Software (including but not limited to the digital twin calibration engine, Kalman node state matrices, and token pacing schedulers) remain the sole and exclusive property of the Author. The telemetry logs signed by the Zero-Disk Crypto-Stamp (`# tiersa_signature`) constitute verifiable ledger entries for any warranty or liability compliance audits.
+
+### 5. TERMINATION
+This License terminates automatically and immediately without notice if you fail to comply with any provision of this agreement or if your designated validation key manifest expires. Upon termination, you must destroy all copies of the software binary.
+
+---
+
+# 🇷🇺 КОРПОРАТИВНОЕ ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ (EULA) TIERSA™
+
+**Авторские права © 2026. Все права защищены.**
+**Автор и Главный Архитектор:** Евгений Байдиков (ProFoton / TIERSA Sys).
+**Связь:** dantesevg@gmail.com
+
+Настоящее программное обеспечение предоставляется по лицензии, а не продается. Скомпилированный бинарный файл `t_rust_core` является коммерческой тайной и закрытой проприетарной интеллектуальной собственностью. Использование программы разрешено исключительно на основе криптографического ключа авторизации (`*.key`). Любые попытки декомпиляции, реверс-инжиниринга, копирования кода или обхода лимитов сетевого периметра квалифицируются как прямое нарушение международных законов о защите авторских прав и влекут за собой немедленный отзыв лицензии.
