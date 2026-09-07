@@ -313,7 +313,7 @@
     <section class="hero">
         <div class="container">
             <h1>Sovereign Pre-Emptive Infrastructure Defense</h1>
-            <p>TIERSA™ Tungsten Carbide v5.0 is an automated, self-learning hardware mitigation middleware engineered to completely insulate next-generation high-density AI nodes against core degradation and catastrophic failures.</p>
+            <p>TIERSA™ Tungsten Carbide v5.0 is an automated, self-learning hardware middleware engineered to completely insulate next-generation high-density AI nodes against core degradation and catastrophic failures.</p>
             <a href="#request" class="cta-btn">Request License Kit</a>
         </div>
     </section>
@@ -351,7 +351,6 @@
             </div>
             <div class="zone-card">
                 <div class="icon">⚡</div>
-
                 <h4>VRM Phase</h4>
                 <p>Suppresses sudden di/dt explosive current waves during deep context initialization.</p>
             </div>
@@ -392,15 +391,29 @@
 
         <div id="request" class="split-right">
             <h3>Request Evaluation Manifest</h3>
-            <div class="form-box" style="text-align: center; padding: 50px 40px;">
-                <div style="font-size: 48px; margin-bottom: 20px;">🛡️</div>
-                <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Sovereign Authorization Gateway</h4>
-                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 35px; line-height: 1.5;">To secure core intellectual property, prevent unauthorized cluster scaling, and comply with strict air-gap compliance frameworks, license keys are issued directly via the Lead Infrastructure Architect.</p>
-                
-                <!-- 🟢 НАДЁЖНЫЙ КЛИК-КОНТУР: Чистый JS гарантирует разделение полей в любом почтовике мира -->
-                <button onclick="sendSovereignEmail()" class="submit-btn" style="width: 100%; padding: 18px 0; font-size: 14px; border: none; cursor: pointer;">
-                    Generate Key via Direct Secure Email
-                </button>
+            <div class="form-box">
+                <!-- 🟢 ВОЗВРАТ НАШЕЙ ТОПОВОЙ ФОРМЫ С АВТОНОМНЫМ ОБРАБОТЧИКОМ ON-SUBMIT -->
+                <form onsubmit="generateSovereignManifest(event)">
+                    <div class="form-group">
+                        <label>datacenter context label</label>
+                        <input type="text" id="dc_label" placeholder="e.g., Yandex Zone-A / Global Cloud" required>
+                    </div>
+                    <div class="form-group">
+                        <label>target silicon architecture</label>
+                        <select id="hw_profile" required>
+                            <option value="">Select hardware profile...</option>
+                            <option value="NVIDIA Blackwell B300 (1000W+)">NVIDIA Blackwell B300 (1000W+)</option>
+                            <option value="NVIDIA Hopper H100 / B200">NVIDIA Hopper H100 / B200</option>
+                            <option value="Google TPU Trillium (v6e/v7x)">Google TPU Trillium (v6e/v7x)</option>
+                            <option value="NVIDIA Ampere A100 Cluster">NVIDIA Ampere A100 Cluster</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>allocated allocation limit (nodes count)</label>
+                        <input type="number" id="nodes_count" placeholder="e.g., 72 or 1000" min="1" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Generate Key Manifest</button>
+                </form>
             </div>
         </div>
     </section>
@@ -413,20 +426,33 @@
         </div>
     </footer>
 
+    <!-- 🧠 УМНЫЙ ЛОКАЛЬНЫЙ СБОРЩИК ДАННЫХ ИЗ ПОЛЕЙ ВВОДА -->
     <script>
-        function sendSovereignEmail() {
+        function generateSovereignManifest(event) {
+            // Предотвращаем дефолтное поведение пустой отправки
+            event.preventDefault();
+
+            // Считываем значения, которые ввел пользователь на сайте
+            const dcLabel = document.getElementById("dc_label").value;
+            const hwProfile = document.getElementById("hw_profile").value;
+            const nodesCount = document.getElementById("nodes_count").value;
+
             const email = "dantesevg@gmail.com";
-            const subject = encodeURIComponent("🚨 Request for TIERSA™ Tungsten Carbide v5.0 Evaluation Key Manifest");
+            const subject = encodeURIComponent("🚨 New License Key Request: TIERSA™ Tungsten Carbide v5.0");
             
+            // Формируем красивое персонализированное тело письма на основе введенных полей
             const body = encodeURIComponent(
                 "Hello TIERSA Sys Team,\n\n" +
-                "We would like to request a 3-day cryptographic license key transient manifest for our infrastructure.\n\n" +
-                "- Datacenter Context Label: [Fill Your DC]\n" +
-                "- Target Silicon Architecture: [NVIDIA Blackwell B300 / Google TPU]\n" +
-                "- Allocated Nodes Count: [Fill Nodes Amount]\n\n" +
+                "We have generated a license key request manifest directly via the official platform registry.\n\n" +
+                "--- INFRASTRUCTURE CONFIGURATION ---\n" +
+                "- Datacenter Context Label: " + dcLabel + "\n" +
+                "- Target Silicon Architecture: " + hwProfile + "\n" +
+                "- Allocated Nodes Capacity: " + nodesCount + " Nodes\n\n" +
+                "Please generate the signed RSA-PSS (*.key) manifest for this environment.\n\n" +
                 "Best regards,"
             );
             
+            // Нативно открываем почтовик с идеально разделенными параметрами
             window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
         }
     </script>
