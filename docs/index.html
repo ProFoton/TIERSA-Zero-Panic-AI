@@ -365,7 +365,7 @@
                 <p>Lowers interposer static thermal discharge overhead by up to 14°C dynamically.</p>
             </div>
             <div class="zone-card">
-                <div class="icon">Target</div>
+                <div class="icon">🛡️</div>
                 <h4>Host CPU</h4>
                 <p>Natively hooks into Linux kernel sysfs layers to shield orchestrating hardware.</p>
             </div>
@@ -392,14 +392,18 @@
         <div id="request" class="split-right">
             <h3>Request Evaluation Manifest</h3>
             <div class="form-box">
-                <form onsubmit="event.preventDefault(); alert('🚀 Evaluation request submitted to the Lead Infrastructure Architect.');">
+                <!-- 🟢 НАДЁЖНЫЙ БОЕВОЙ ШЛЮЗ С ВАШИМ АВТОРСКИМ ОПРЕДЕЛЕНИЕМ НАПРАВЛЕНИЯ ПОЧТЫ -->
+                <form action="https://formspree.io" method="POST">
+                    <input type="hidden" name="_to" value="dantesevg@gmail.com">
+                    <input type="hidden" name="_subject" value="🚨 TIERSA™ Tungsten Carbide: New License Key Manifest Request!">
+                    
                     <div class="form-group">
                         <label>datacenter context label</label>
-                        <input type="text" placeholder="e.g., Yandex Zone-A / Global Cloud" required>
+                        <input type="text" name="datacenter_label" placeholder="e.g., Yandex Zone-A / Global Cloud" required>
                     </div>
                     <div class="form-group">
                         <label>target silicon architecture</label>
-                        <select required>
+                        <select name="hardware_profile" required>
                             <option value="">Select hardware profile...</option>
                             <option>NVIDIA Blackwell B300 (1000W+)</option>
                             <option>NVIDIA Hopper H100 / B200</option>
@@ -409,7 +413,7 @@
                     </div>
                     <div class="form-group">
                         <label>allocated allocation limit (nodes count)</label>
-                        <input type="number" placeholder="e.g., 72 or 1000" min="1" required>
+                        <input type="number" name="nodes_count" placeholder="e.g., 72 or 1000" min="1" required>
                     </div>
                     <button type="submit" class="submit-btn">Generate Key Manifest</button>
                 </form>
