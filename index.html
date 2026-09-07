@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIERSA™ | Tungsten Carbide v5.0 — Sovereign AI Hardware Mitigation Middleware</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --card-bg: #0d0d0d;
+            --border-color: #1a1a1a;
+            --text-main: #f5f5f5;
+            --text-muted: #888888;
+            --accent-carbide: #E06611;
+            --accent-platinum: #0052CC;
+            --accent-golden: #FFB703;
+            --accent-green: #28A745;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Layout */
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--text-main);
+        }
+
+        .logo span {
+            color: var(--accent-carbide);
+        }
+
+        .badge-grid {
+            display: flex;
+            gap: 10px;
+        }
+
+        .badge {
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-20%, -50%);
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(224, 102, 17, 0.05) 0%, transparent 70%);
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent-carbide);
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 15px 35px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            background-color: #f7761b;
+        }
+
+        /* Stats Grid */
+        .metrics-bar {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 30px;
+            margin: -40px auto 60px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .metric-item h3 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--accent-golden);
+        }
+
+        .metric-item p {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+
+        /* 5 Zones Grid */
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 50px;
+        }
+
+        .grid-5-zones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 80px;
+        }
+
+        .zone-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 25px;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .zone-card:hover {
+            border-color: var(--accent-carbide);
+            transform: translateY(-4px);
+        }
+
+        .zone-card .icon {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .zone-card h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .zone-card p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* B2B Split Layout */
+        .split-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 50px;
+            padding: 60px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .split-left h3, .split-right h3 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .stat-line {
+            background-color: rgba(204, 0, 0, 0.05);
+            border-left: 3px solid var(--accent-carbide);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .stat-line span {
+            color: #ff4d4d;
+            font-weight: 700;
+        }
+
+        /* Request Form Box */
+        .form-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            color: var(--text-muted);
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 12px;
+            color: white;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            border-color: var(--accent-carbide);
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: var(--accent-platinum);
+            color: white;
+            border: none;
+            padding: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: background-color 0.2s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0066ff;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo">TIERSA<span>™</span></div>
+            <div class="badge-grid">
+                <span class="badge" style="background-color: #111;">Tokio Async</span>
+                <span class="badge" style="background-color: var(--accent-platinum);">Bare-Metal</span>
+                <span class="badge" style="background-color: var(--accent-green);">Air-Gapped</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Showcase -->
+    <section class="hero">
+        <div class="container">
+            <h1>Sovereign Pre-Emptive Infrastructure Defense</h1>
+            <p>TIERSA™ Tungsten Carbide v5.0 is an automated, self-learning hardware mitigation middleware engineered to completely insulate next-generation high-density AI nodes against core degradation and catastrophic failures.</p>
+            <a href="#request" class="cta-btn">Request License Kit</a>
+        </div>
+    </section>
+
+    <!-- Industrial Records Bar -->
+    <section class="container">
+        <div class="metrics-bar">
+            <div class="metric-item">
+                <h3>10,027.73</h3>
+                <p>Requests Per Sec (RPS)</p>
+            </div>
+            <div class="metric-item">
+                <h3>1.13 MB</h3>
+                <p>Stripped Binary Size</p>
+            </div>
+            <div class="metric-item">
+                <h3>10,000,000</h3>
+                <p>Marathon Stress-Test</p>
+            </div>
+            <div class="metric-item">
+                <h3>0.00%</h3>
+                <p>Network Drop Rate</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 Zones Section -->
+    <section class="container">
+        <h2 class="section-title">Multi-Zone Silicon Protection Layers</h2>
+        <div class="grid-5-zones">
+            <div class="zone-card">
+                <div class="icon">🔮</div>
+                <h4>GPU Core</h4>
+                <p>Arrhenius activation monitoring with microsecond clipping thresholds.</p>
+            </div>
+            <div class="zone-card">
+                <div class="icon">⚡</div>
+                <h4>VRM Phase</h4>
+                <p>Suppresses sudden di/dt explosive current waves during deep context initialization.</p>
+            </div>
+            <div class="zone-card">
+                <div class="icon">💾</div>
+                <h4>HBM3e Memory</h4>
+                <p>Pre-emptive page eviction preserving data integrity under critical thermal strain.</p>
+            </div>
+            <div class="zone-card">
+                <div class="icon">💎</div>
+                <h4>CoWoS Substrate</h4>
+                <p>Lowers interposer static thermal discharge overhead by up to 14°C dynamically.</p>
+            </div>
+            <div class="zone-card">
+                <div class="icon">Target</div>
+                <h4>Host CPU</h4>
+                <p>Natively hooks into Linux kernel sysfs layers to shield orchestrating hardware.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Split Business Case Layout -->
+    <section class="container split-layout">
+        <div class="split-left">
+            <h3>The AI Cluster Failure Matrix</h3>
+            <p style="color: var(--text-muted); margin-bottom: 25px;">Unmitigated operation of hyper-dense clusters leads to extreme hardware erosion rates:</p>
+            
+            <div class="stat-line">
+                Meta Llama 3 Cluster Audit: <span>1 Hardware crash every 3 hours</span> on 16k H100 node pipeline.
+            </div>
+            <div class="stat-line">
+                Silicon Lotteries Burnout: Standard unmanaged setups experience up to <span>9% annual degradation</span>.
+            </div>
+            <div class="stat-line">
+                Financial Impact Liability: Infrastructure downtime burns an average of <span>\$15,000 per single minute</span>.
+            </div>
+        </div>
+
+        <div id="request" class="split-right">
+            <h3>Request Evaluation Manifest</h3>
+            <div class="form-box">
+                <form onsubmit="event.preventDefault(); alert('🚀 Evaluation request submitted to the Lead Infrastructure Architect.');">
+                    <div class="form-group">
+                        <label>datacenter context label</label>
+                        <input type="text" placeholder="e.g., Yandex Zone-A / Global Cloud" required>
+                    </div>
+                    <div class="form-group">
+                        <label>target silicon architecture</label>
+                        <select required>
+                            <option value="">Select hardware profile...</option>
+                            <option>NVIDIA Blackwell B300 (1000W+)</option>
+                            <option>NVIDIA Hopper H100 / B200</option>
+                            <option>Google TPU Trillium (v6e/v7x)</option>
+                            <option>NVIDIA Ampere A100 Cluster</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>allocated allocation limit (nodes count)</label>
+                        <input type="number" placeholder="e.g., 72 or 1000" min="1" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Generate Key Manifest</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Security Token -->
+    <footer>
+        <div class="container">
+            <p>TIERSA™ Tungsten Carbide v5.0.0-GOLDEN. Deployed globally with zero-disk crypto-stamp integrity check.</p>
+            <p style="margin-top: 10px; font-size: 11px; color: #444;">Copyright &copy; 2026 Evgeniy Baidikov (ProFoton / TIERSA Sys). All Rights Reserved. Protected by Proprietary EULA.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
