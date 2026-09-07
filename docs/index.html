@@ -397,12 +397,10 @@
                 <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Sovereign Authorization Gateway</h4>
                 <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 35px; line-height: 1.5;">To secure core intellectual property, prevent unauthorized cluster scaling, and comply with strict air-gap compliance frameworks, license keys are issued directly via the Lead Infrastructure Architect.</p>
                 
-                <!-- 🟢 ИСПРАВЛЕННЫЙ ЧИСТЫЙ СИНТАКСИС MAILTO С СЕПАРАЦИЕЙ ПОЛЕЙ -->
-                <a href="mailto:dantesevg@://gmail.com🚨%20Request%20for%20TIERSA™%20Tungsten%20Carbide%20v5.0%20Evaluation%20Key%20Manifest&body=Hello%20TIERSA%20Sys%20Team,%0A%0AWe%20would%20like%20to%20request%20a%203-day%20cryptographic%20license%20key%20manifest%20for%20our%20infrastructure.%0A%0A-%20Datacenter%20Context%20Label:%20[Fill%20Your%20DC]%0A-%20Target%20Silicon%20Architecture:%20[NVIDIA%20Blackwell%20B300%20/%20Google%20TPU]%0A-%20Allocated%20Nodes%20Count:%20[Fill%20Nodes%20Amount]%0A%0ABest%20regards," 
-                   class="submit-btn" 
-                   style="display: block; text-decoration: none; text-align: center; padding: 18px 0; font-size: 14px;">
+                <!-- 🟢 НАДЁЖНЫЙ КЛИК-КОНТУР: Чистый JS гарантирует разделение полей в любом почтовике мира -->
+                <button onclick="sendSovereignEmail()" class="submit-btn" style="width: 100%; padding: 18px 0; font-size: 14px; border: none; cursor: pointer;">
                     Generate Key via Direct Secure Email
-                </a>
+                </button>
             </div>
         </div>
     </section>
@@ -414,6 +412,24 @@
             <p style="margin-top: 10px; font-size: 11px; color: #444;">Copyright &copy; 2026 Evgeniy Baidikov (ProFoton / TIERSA Sys). All Rights Reserved. Protected by Proprietary EULA.</p>
         </div>
     </footer>
+
+    <script>
+        function sendSovereignEmail() {
+            const email = "dantesevg@gmail.com";
+            const subject = encodeURIComponent("🚨 Request for TIERSA™ Tungsten Carbide v5.0 Evaluation Key Manifest");
+            
+            const body = encodeURIComponent(
+                "Hello TIERSA Sys Team,\n\n" +
+                "We would like to request a 3-day cryptographic license key transient manifest for our infrastructure.\n\n" +
+                "- Datacenter Context Label: [Fill Your DC]\n" +
+                "- Target Silicon Architecture: [NVIDIA Blackwell B300 / Google TPU]\n" +
+                "- Allocated Nodes Count: [Fill Nodes Amount]\n\n" +
+                "Best regards,"
+            );
+            
+            window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+        }
+    </script>
 
 </body>
 </html>
