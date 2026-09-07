@@ -6,7 +6,7 @@
 
 IMPORTANT: PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE DOWNLOADING, INSTALLING, OR USING THE SOFTWARE.
 
-By downloading, installing, or executing the pre-compiled binary (`t_rust_core` or `tiersa_core`), you explicitly agree to be bound by the terms and conditions of this proprietary End-User License Agreement (EULA). If you do not agree to these terms, you are strictly prohibited from using the software.
+By downloading, installing, or executing the pre-compiled binary (`t_rust_core`, `tiersa_core` or  tiersa_rust_Tungsten_core_v.5.0), you explicitly agree to be bound by the terms and conditions of this proprietary End-User License Agreement (EULA). If you do not agree to these terms, you are strictly prohibited from using the software.
 
 ---
 
