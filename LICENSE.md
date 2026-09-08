@@ -1,76 +1,73 @@
 # 🔒 END-USER LICENSE AGREEMENT (EULA)
 
-## TIERSA™ TUNGSTEN CARBIDE v5.0
+## TIERSA™-Zero-Panic-AI™ (v5.0 Tungsten Carbide)
 
 <p align="center">
-  <b>Copyright © 2026. All rights reserved.</b><br>
-  <b>Author & Chief Architect:</b> Evgeny Baydikov (ProFoton / TIERSA Sys)<br>
+  <b>Copyright © 2026 Evgeny Baydikov. All rights reserved.</b><br>
+  <b>Proprietor, Author & Chief Architect:</b> Evgeny Baydikov (ProFoton / TIERSA Sys)<br>
   <b>Corporate Contact:</b> <a href="mailto:dantesevg@gmail.com">dantesevg@gmail.com</a>
 </p>
 
 ---
 
 > [!IMPORTANT]
-> **PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE DOWNLOADING, INSTALLING, OR USING THE SOFTWARE.**
+> **PLEASE READ THIS END-USER LICENSE AGREEMENT ("EULA") CAREFULLY BEFORE DOWNLOADING, INSTALLING, OR OPERATING THE SOFTWARE.**
 > 
-> By downloading, installing, or running the pre-compiled binary file (**size: 1.17 MB**), you expressly and unconditionally agree to be bound by the terms of this proprietary End-User License Agreement (EULA). If you do not agree to these terms, you are **strictly prohibited** from using this software.
+> By downloading, installing, or executing the pre-compiled binary file (**size: 1.17 MB**), you expressly, explicitly, and unconditionally agree to be bound by the terms of this proprietary license. If you do not agree to these terms, you are **strictly prohibited** from using this software.
 
 ---
 
-### 1. 📜 LICENSE GRANT AND LIMITATIONS
-This Software is **licensed, not sold**. Based on a valid cryptographic license manifest (`*.key`) issued directly by the Author, you are granted:
-* A **non-exclusive** and non-transferable right.
-* A **fully limited** and temporary right to deploy the compiled binary file.
-* Deployment exclusively within the **authorized network perimeter**.
-* Operation strictly within the allocated capacity limits of the AI cluster (**restricted solely by the number of physical GPU/TPU units**).
+### 1. ⚖️ LEGAL ANCHORING, OWNERSHIP, AND BRAND EVOLUTION
 
-### 2. 🚫 STRICT PROHIBITIONS AND COMMERCIAL PROTECTION
-Under the terms of this EULA, the Licensee and any third parties are **strictly prohibited** from engaging in the following activities:
+* **Sole Proprietorship:** This Software, including all its variations, compiled binaries, algorithms, and documentation, is the exclusive intellectual property of the individual physical person **Evgeny Baydikov** (hereinafter referred to as the **"Author"** / **"Rightsholder"**).
+* **Commercial Nomenclature:** The Author operates under the commercial trade names **TIERSA™**, **TIERSA™-Zero-Panic-AI™**, and **TIERSA Sys**. Any reference to these entities in this document, the source code, binary metadata, network headers, or telemetry metrics implies direct and indivisible assignment of rights to **Evgeny Baydikov**.
+* **Corporate Succession Clause:** In the event that the Author establishes, registers, or incorporates a dedicated corporate legal entity (e.g., *TIERSA Inc.*, *TIERSA LLC*, or *TIERSA Ltd.*), all titles, copyrights, and intellectual property vectors mentioned herein shall seamlessly transition to said legal entity without requiring modification of the compiled binary structures or historical license manifests.
 
-| Type of Prohibition | Description of Restriction |
+### 2. 📜 LICENSE GRANT AND IMMUTABLE LIMITATIONS
+This Software is **licensed, not sold**. Based on a valid cryptographic license manifest (`*.key`) issued directly and signed by the Author, the Licensee is granted:
+* A **non-exclusive**, non-transferable, revocable, and temporary right to deploy the compiled binary file.
+* Deployment rights exclusively within the **authorized isolated network perimeter** (Air-Gapped environment).
+* Operation strictly capped by the hardcoded capacity limits of the AI cluster (**restricted by the specific number of physical GPU/TPU units** designated in the `.key` manifest).
+
+### 3. 🚫 STRICT PROHIBITIONS AND REVERSE-ENGINEERING BARRIERS
+
+| Type of Violation | Legal & Technical Restriction |
 | :--- | :--- |
-| **No Slicing** *(Reverse Engineering)* | You may not reverse engineer, decompile, disassemble, modify, decrypt, or attempt to extract the source code or logical algorithm structures from the compiled binary file. |
-| **Unauthorized Replication** | Copying, cloning, distributing, renting, sublicensing, hosting as a managed service (SaaS/PaaS), or otherwise commercially exploiting this software is strictly prohibited, regardless of any direct commercial contract with the Author. |
-| **Bypassing Capacity Limits** | Any attempt to interfere with the built-in **RSA-PSS** cryptographic validation cycle or bypass the established limit on the number of allocated GPUs/TPUs will result in the **immediate and automatic revocation** of this license. |
+| **No Slicing** *(Reverse Engineering)* | You are strictly prohibited from reverse engineering, decompiling, disassembling, modifying, decrypting, or attempting to extract the source code, intermediate representations, or logical algorithm structures from the compiled binary file. |
+| **Tampering with Identity Metadata** | Any attempt to strip, alter, patch, or obfuscate hex-strings, headers, or environment variables containing the strings `Evgeny Baydikov`, `TIERSA`, or `TIERSA-Zero-Panic-AI` within the binary file is a direct violation of copyright law and triggers immediate termination. |
+| **Unauthorized Replication** | Copying, cloning, distributing, renting, sublicensing, or hosting this software as a managed service (SaaS/PaaS) is strictly prohibited, regardless of any external cloud orchestration layers. |
+| **Bypassing Capacity Limits** | Any attempt to bypass the built-in **RSA-PSS** cryptographic validation cycle or forge the capacity metric limits will result in **immediate and automatic revocation** of this license. |
 
-### 3. 🛡️ DATA PRIVACY AND AIR-GAP MODE
-The Software operates strictly within a **100% isolated local network perimeter** (Air-Gapped architecture). 
+### 4. 🧠 INTELLECTUAL PROPERTY AND METRIC SIGNATURES
+All titles, international copyrights, patents, trade secrets, and intellectual property rights within the Software remain the **sole and exclusive property of Evgeny Baydikov**. 
 
-The Author guarantees that the Software:
-* **Does not contain** hidden network telemetry modules.
-* **Does not transmit** Large Language Model (LLM) weights externally.
-* Functions in absolute compliance with sovereign data storage security protocols.
-
-### 4. 🧠 INTELLECTUAL PROPERTY AND MONITORING
-All titles, international copyrights, patents, trade secrets, and intellectual property rights within the Software remain the **sole and exclusive property of the Author**.
-
-This includes, but is not limited to:
-* Adaptive token pacing algorithms.
-* Kalman filters for thermal zones.
-* vLLM KV-cache management modules.
+This protection encompasses, but is not limited to:
+* Adaptive token pacing and micro-pacing algorithms.
+* Kalman filters tailored for accelerator thermal zones.
+* vLLM-Native PagedAttention memory swapping architectures.
 
 > [!NOTE]
-> The production-grade metrics output via HTTP request is intended solely for real-time integration with the Licensee's **Prometheus / Grafana** monitoring systems.
+> All production-grade metrics outputted via HTTP request for **Prometheus / Grafana** monitoring are natively stamped with an immutable cryptographic signature string (`# tiersa_signature: signed_by_evgeny_baydikov`) generated at runtime.
 
-### 5. ⚠️ DISCLAIMER OF WARRANTY ("AS IS")
-THE SOFTWARE IS PROVIDED **"AS IS"**, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+### 5. ⚠️ FULL DISCLAIMER OF WARRANTY ("AS IS")
+THE SOFTWARE IS PROVIDED **"AS IS"**, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 
-The Author **shall not be held liable** for any physical or economic damage to the Licensee's hardware, including but not limited to:
-* 💥 **VRM** power phase burnout.
+Under no circumstances shall the Author (**Evgeny Baydikov**) or **TIERSA™-Zero-Panic-AI™** be held liable for any physical, structural, or economic damage to the Licensee's hardware or infrastructure, including but not limited to:
+* 💥 **VRM** power phase burnout or electrical overstress.
 * 🌡️ Thermal degradation of the **CoWoS** substrate.
-* ❌ **HBM3e** memory failure crashes.
-* 📉 Reduction of Mean Time Between Failures (**MTBF**).
+* ❌ **HBM3e** or high-bandwidth memory failure crashes under heavy transient loads ($di/dt$).
+* 📉 Premature reduction of Mean Time Between Failures (**MTBF**).
 
-*The Licensee assumes all risks associated with the operation of active power and thermal management controllers.*
+*The Licensee assumes all operational risks associated with real-time hardware thermal mitigation.*
 
-### 6. ⏳ TERMINATION
-This License terminates **automatically and immediately** without prior notice if:
-1. You fail to comply with any provision of this agreement.
-2. The validation key manifest assigned to you expires.
+### 6. ⏳ TERMINATION AND LIQUIDATION
+This License terminates **automatically, instantly, and without prior notice** from the Author if:
+1. The Licensee fails to comply with any single provision of this EULA.
+2. The cryptographic validation key manifest (`*.key`) assigned to the cluster expires.
 
-**Upon termination of the license, you must destroy all copies of the software binary file in your possession.**
+**Upon termination, the Licensee is legally obligated to immediately cease all operations of the software and completely destroy all copies, binaries, and mirrors of the executable file in their possession.**
 
 ---
 <p align="center">
-  <sub>TIERSA™ TUNGSTEN CARBIDE • 2026</sub>
+  <sub>TIERSA™-Zero-Panic-AI™ • Copyright © 2026 Evgeny Baydikov</sub>
 </p>
