@@ -313,7 +313,7 @@
     <section class="hero">
         <div class="container">
             <h1>Sovereign Pre-Emptive Infrastructure Defense</h1>
-            <p>TIERSA™ Tungsten Carbide v5.0 is an automated, self-learning hardware middleware engineered to completely insulate next-generation high-density AI nodes against core degradation and catastrophic failures.</p>
+            <p>TIERSA™ Tungsten Carbide v5.0 is an automated, self-learning hardware mitigation middleware engineered to completely insulate next-generation high-density AI nodes against core degradation and catastrophic failures.</p>
             <a href="#request" class="cta-btn">Request License Kit</a>
         </div>
     </section>
@@ -392,7 +392,7 @@
         <div id="request" class="split-right">
             <h3>Request Evaluation Manifest</h3>
             <div class="form-box">
-                <!-- 🟢 ВОЗВРАТ НАШЕЙ ТОПОВОЙ ФОРМЫ С АВТОНОМНЫМ ОБРАБОТЧИКОМ ON-SUBMIT -->
+                <!-- 🟢 ОБНОВЛЕННАЯ ФОРМА С ПОДДЕРЖКОЙ КРИТИЧЕСКОГО ИНФРАСТРУКТУРНОГО ПОЛЯ SUBNET -->
                 <form onsubmit="generateSovereignManifest(event)">
                     <div class="form-group">
                         <label>datacenter context label</label>
@@ -407,6 +407,10 @@
                             <option value="Google TPU Trillium (v6e/v7x)">Google TPU Trillium (v6e/v7x)</option>
                             <option value="NVIDIA Ampere A100 Cluster">NVIDIA Ampere A100 Cluster</option>
                         </select>
+                    </div>
+                    <div class="form-group">
+                        <label>target cluster subnet mask (air-gap lock)</label>
+                        <input type="text" id="subnet_mask" placeholder="e.g., 10.140.0.0/16 or 192.168.1.0/24" required>
                     </div>
                     <div class="form-group">
                         <label>allocated allocation limit (nodes count)</label>
@@ -426,33 +430,34 @@
         </div>
     </footer>
 
-    <!-- 🧠 УМНЫЙ ЛОКАЛЬНЫЙ СБОРЩИК ДАННЫХ ИЗ ПОЛЕЙ ВВОДА -->
+    <!-- 🧠 МОДЕРНИЗИРОВАННЫЙ АВТОНОМНЫЙ JS-СБОРЩИК МЕТАДАННЫХ С ЛОГИКОЙ SUBNET -->
     <script>
         function generateSovereignManifest(event) {
-            // Предотвращаем дефолтное поведение пустой отправки
             event.preventDefault();
 
-            // Считываем значения, которые ввел пользователь на сайте
+            // Считываем значения полей, включая новую переменную маски подсети
             const dcLabel = document.getElementById("dc_label").value;
             const hwProfile = document.getElementById("hw_profile").value;
+            const subnetMask = document.getElementById("subnet_mask").value;
             const nodesCount = document.getElementById("nodes_count").value;
 
             const email = "dantesevg@gmail.com";
-            const subject = encodeURIComponent("🚨 New License Key Request: TIERSA™ Tungsten Carbide v5.0");
+            const subject = encodeURIComponent("🚨 Key Request: TIERSA™ Tungsten Carbide v5.0");
             
-            // Формируем красивое персонализированное тело письма на основе введенных полей
+            // Вшиваем SUBNET в тело официального email-запроса к Лид-Архитектору
             const body = encodeURIComponent(
                 "Hello TIERSA Sys Team,\n\n" +
                 "We have generated a license key request manifest directly via the official platform registry.\n\n" +
                 "--- INFRASTRUCTURE CONFIGURATION ---\n" +
                 "- Datacenter Context Label: " + dcLabel + "\n" +
                 "- Target Silicon Architecture: " + hwProfile + "\n" +
+                "- Target Cluster Subnet (Air-Gap Lock): " + subnetMask + "\n" +
                 "- Allocated Nodes Capacity: " + nodesCount + " Nodes\n\n" +
-                "Please generate the signed RSA-PSS (*.key) manifest for this environment.\n\n" +
+                "Please generate the cryptographically signed RSA-PSS (*.key) license manifest bound strictly to this network subnet interface.\n\n" +
                 "Best regards,"
             );
             
-            // Нативно открываем почтовик с идеально разделенными параметрами
+            // Вызываем нативный навигатор отправки почты
             window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
         }
     </script>
