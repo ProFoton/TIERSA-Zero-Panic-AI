@@ -55,9 +55,6 @@ This protection encompasses, but is not limited to:
 * Kalman filters tailored for accelerator thermal zones.
 * vLLM-Native PagedAttention memory swapping architectures.
 
-> [!NOTE]
-> All production-grade metrics outputted via HTTP request for **Prometheus / Grafana** monitoring are natively stamped with an immutable cryptographic signature string (`# tiersa_signature: signed_by_evgeny_baydikov`) generated at runtime.
-
 ### 5. ⚠️ FULL DISCLAIMER OF WARRANTY ("AS IS")
 THE SOFTWARE IS PROVIDED **"AS IS"**, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 
