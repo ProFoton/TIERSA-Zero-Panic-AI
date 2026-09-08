@@ -1,14 +1,3 @@
-# 🔒 END-USER LICENSE AGREEMENT (EULA) FOR TIERSA™ TUNGSTEN CARBIDE v5.0
-
-**Copyright © 2026. All Rights Reserved.**
-**Author & Core Architect: Evgeniy Baidikov (ProFoton / TIERSA Sys).**
-**Corporate Coordinates: dantesevg@gmail.com**
-
-Полный текст преамбулы и условий лицензионного соглашения (EULA) для бинарного файла размером 1.17 MB доступен в исходных материалах. Документ устанавливает правила использования программного обеспечения, включая ограничения на декомпиляцию, несанкционированное копирование и обход криптографической валидации.1. LICENSE GRANT & BOUNDARIESПредоставляется ограниченное, неисключительное право на использование скомпилированного бинарного файла в рамках выделенных лимитов и при наличии валидного криптографического манифеста.2. STRICT PROHIBITIONS & COMMERCIAL PROTECTIONЗапрещается реверс-инжиниринг, модификация, коммерческое распространение и любые попытки обхода системы проверки лицензии.
-
-
-
-
 
 # 🔒 END-USER LICENSE AGREEMENT (EULA) FOR TIERSA™ TUNGSTEN CARBIDE v5.0
 
