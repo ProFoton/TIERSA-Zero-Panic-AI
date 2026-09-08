@@ -69,15 +69,6 @@ The runtime environment was intentionally restricted to a **legacy consumer setu
 
 > 💡 *Architectural Note: The execution of 38.6 million transactions over a 10-minute window with a flat latency distribution curve proves that the TIERSA™ core is fully production-ready for global hyperscaler deployments (Google TPU, NVIDIA DGX, Azure NDv5) under strict air-gap compliance frameworks.*
 
-## APACHE
-### Test Log Insights (Mean across 10 million cycles):
-* **Complete Requests:** 10,000,000
-* **Failed Requests:** 0 (0.00% Network Drop Rate)
-* **Stable Throughput Speed:** 10,027.73 Requests Per Second (RPS)
-* **Core Processing Latency:** 12.11 ms (Mean)
-* **Mathematical Ingestion Overhead:** 0.086 ms per transaction
-* **Total Transferred Volume:** 5.81 GB of signed, cryptographically verified telemetry data
-
 ---
 
 ## 💎 Core Advanced Enterprise Subsystems
