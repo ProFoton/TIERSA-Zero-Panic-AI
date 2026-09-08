@@ -7,17 +7,22 @@
 
 <div align="center">
 
-| 📦 ЯЗЫК | ⚡ ДВИЖОК | 🌐 ОКРУЖЕНИЕ |
-| :--- | :--- | :--- |
-| <img src="https://shields.io" alt="Rust"> | <img src="https://shields.io" alt="Tokio"> | <img src="https://shields.io" alt="Linux"> |
-
-| 🔒 БЕЗОПАСНОСТЬ | 💾 РАЗМЕР | 📄 ЛИЦЕНЗИЯ |
-| :--- | :--- | :--- |
-| <img src="https://shields.io" alt="Air-Gapped"> | <img src="https://shields.io" alt="Size"> | <img src="https://shields.io" alt="EULA"> |
-
-| 🚀 ПРОИЗВОДИТЕЛЬНОСТЬ | 🎯 ЦЕЛИ |
-| :--- | :--- |
-| <img src="https://shields.io" alt="RPS"> | <img src="https://shields.io" alt="Target"> |
+<table>
+  <tr>
+    <td bgcolor="#E06611"><b>📦 ЯЗЫК:</b> Rust 1.75+</td>
+    <td bgcolor="#111111"><b>⚡ ДВИЖОК:</b> Tokio Async</td>
+    <td bgcolor="#0052CC"><b>🌐 ОКРУЖЕНИЕ:</b> Bare-Metal | Linux</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CC0000"><b>🔒 БЕЗОПАСНОСТЬ:</b> Air-Gapped</td>
+    <td bgcolor="#28A745"><b>💾 РАЗМЕР:</b> 1.13 МБ (Stripped)</td>
+    <td bgcolor="#6F42C1"><b>📄 ЛИЦЕНЗИЯ:</b> Проприетарная EULA</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFB703" colspan="2" align="center" style="color: black;"><b>🚀 ПРОИЗВОДИТЕЛЬНОСТЬ:</b> 10,027.73 RPS</td>
+    <td bgcolor="#023E8A" align="center"><b>🎯 ЦЕЛИ:</b> Blackwell / TPU</td>
+  </tr>
+</table>
 
 </div>
 
@@ -112,7 +117,7 @@ TIERSA™-Zero-Panic-AI™ выступает в роли интеллектуа
 
 ```bash
 ~/TIERSA/
-├── t_rust_core        # Скомпилированный файл ядра (1.17 МБ)
+├── t_rust_core        # Скомпилированный файл ядра (1.13 МБ)
 └── Company_license.key # Персональный ключ валидации (привязан к подписи автора)
 ```
 
