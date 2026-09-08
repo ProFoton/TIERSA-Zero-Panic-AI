@@ -7,17 +7,22 @@
 
 <div align="center">
 
-| 📦 LANGUAGE | ⚡ ENGINE | 🌐 ENVIRONMENT |
-| :--- | :--- | :--- |
-| <img src="https://shields.io" alt="Rust"> | <img src="https://shields.io" alt="Tokio"> | <img src="https://shields.io" alt="Linux"> |
-
-| 🔒 SECURITY | 💾 SIZE | 📄 LICENSE |
-| :--- | :--- | :--- |
-| <img src="https://shields.io" alt="Air-Gapped"> | <img src="https://shields.io" alt="Size"> | <img src="https://shields.io" alt="EULA"> |
-
-| 🚀 PERFORMANCE | 🎯 TARGETS |
-| :--- | :--- |
-| <img src="https://shields.io" alt="RPS"> | <img src="https://shields.io" alt="Target"> |
+<table>
+  <tr>
+    <td bgcolor="#E06611"><b>📦 LANGUAGE:</b> Rust 1.75+</td>
+    <td bgcolor="#111111"><b>⚡ ENGINE:</b> Tokio Async</td>
+    <td bgcolor="#0052CC"><b>🌐 ENVIRONMENT:</b> Bare-Metal | Linux</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CC0000"><b>🔒 SECURITY:</b> Air-Gapped</td>
+    <td bgcolor="#28A745"><b>💾 SIZE:</b> 1.13 MB (Stripped)</td>
+    <td bgcolor="#6F42C1"><b>📄 LICENSE:</b> Proprietary EULA</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFB703" colspan="2" align="center" style="color: black;"><b>🚀 PERFORMANCE:</b> 10,027.73 RPS</td>
+    <td bgcolor="#023E8A" align="center"><b>🎯 TARGETS:</b> Blackwell / TPU</td>
+  </tr>
+</table>
 
 </div>
 
@@ -87,7 +92,7 @@ Version v5.0 transitions cluster hardware safety from reactive thresholding into
   During `WARN`/`CRIT` status intervals, the engine injects non-blocking micro-pauses between attention layer evaluations in the completions stream. This mitigates sharp current spikes ($di/dt$) within the VRM without interrupting vLLM generation loops.
 * **📉 ML-Driven Failure Predictor (MTBF)**
   Tracks the vector of thermal acceleration using an EMA trend, estimating hardware Mean Time Between Failures in hours with a verified accuracy of **94.2%**.
-* **🛡️ Native Linux Host CPU Mortality Engine**
+* **🛡️ National Linux Host CPU Mortality Engine**
   Interfaces directly with Linux sysfs paths (`/sys/class/thermal/thermal_zone0/temp`) to compute independent Arrhenius degradation logs for orchestration processors (Xeon/EPYC/Grace).
 * **⚙️ Mechanical Fan Aging Compensator**
   Models non-linear fan bearing wear caused by vibrational stress, preemptively accounting for airflow attenuation.
