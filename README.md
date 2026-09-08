@@ -36,22 +36,22 @@ Modern high-density accelerator frameworks, such as the **NVIDIA Blackwell B300 
 
 ---
 
-## 📊 Промышленные рекорды бенчмарков (Триумф параллелизма на 52 000+ RPS)
-Чтобы подтвердить предельную архитектурную эффективность асинхронного движка вычислений на Rust (`tokio`), прокси-демон ядра был подвергнут агрессивному высоконагруженному стресс-тесту с использованием многопоточного инструмента `wrk`.
+## 📊 Industrial Benchmark Records (52,000+ RPS Concurrency Triumph)
+To validate the extreme architectural efficiency of the compiled asynchronous Rust (`tokio`) state engine, the core proxy daemon was subjected to an intense high-concurrency stress test using the modern multi-threaded `wrk` tool.
 
-Для проверки работы софта под экстремальным давлением сетевых сокетов среда выполнения была намеренно ограничена **устаревшей потребительской конфигурацией (2 ядра Intel i3-4100M CPU выпуска 2014 года) через стандартный USB-модем мобильной сети**. За счет точного выравнивания потоков утилиты под физическую топологию процессора хоста (**2 потока и 2000 одновременных открытых соединений**), ядро TIERSA™ полностью ликвидировало оверхед на переключение контекста, выдав абсолютный исторический пик производительности.
+To evaluate resource efficiency under extreme socket strain, the runtime environment was intentionally restricted to a **legacy consumer setup (2-core Intel i3-4100M CPU from 2014) over a standard USB mobile network modem**. By aligning the benchmark strictly to the host hardware topology (**2 threads and 2000 concurrent connections**), the TIERSA™ core completely eliminated context-switching overhead, driving the hardware to a historical efficiency peak.
 
-### Результаты системного лога (Официальные метрики утилиты wrk):
-* **Абсолютная скорость (Throughput):** 52 319.64 запросов в секунду (RPS) непрерывного удержания на пике.
-* **Общее число обработанных транзакций:** 1 574 251 запрос за 30-секундный спринт.
-* **Ошибки / Потери пакетов:** 0 (0.00% Drop Rate при тотальном насыщении сетевых сокетов).
-* **Средняя задержка обработки ядра (Mean Latency):** 37.40 мс.
-* **Медианный отклик ядра (50% перцентиль):** 29.73 мс.
-* **Задержка в условиях сокрушительной перегрузки (99% перцентиль):** 90.28 мс (при 2000 параллельных клиентах).
-* **Общий объем переданных данных:** 2.94 ГБ подписанной, криптографически верифицированной телеметрии.
-* **Устойчивая скорость передачи данных:** 99.89 Мегабайт в секунду (предел интерфейса хоста).
+### Test Log Insights (Official wrk Datagram Metrics):
+* **Absolute Throughput Speed:** 52,319.64 Requests Per Second (RPS) sustained continuously.
+* **Complete Transacted Workload:** 1,574,251 requests executed over a 30-second window.
+* **Failed Requests / Drop Rate:** 0 (0.00% Failure Rate under massive socket saturation).
+* **Core Processing Latency (Mean):** 37.40 ms.
+* **Median Response Latency (50% Perceptile):** 29.73 ms.
+* **Extreme Load Latency Boundary (99% Perceptile):** 90.28 ms (under 2000 parallel clients).
+* **Total Transferred Volume:** 2.94 GB of cryptographically signed telemetry data read.
+* **Sustained Transfer Rate:** 99.89 MB/sec (Maximum hardware interface saturation).
 
-> 💡 *Архитектурная заметка: Благодаря lock-free оптимизации кэш-локальности и строгому приведению скаляров к типу `f64`, архитектура Wolfram Carbide идеально раскрывается на марафонских дистанциях под жестким прессом, потребляя при этом на 12% меньше ресурсов CPU хоста, чем ранние версии. Полный лог-файл сохранен в директории `/benchmarks`.*
+> 💡 *Architectural Note: Due to our lock-free cache-locality rewrite and strict `f64` scalar coercion, the Wolfram Carbide architecture excels under persistent macro-scale loads, consuming 12% less host CPU overhead than previous stable versions. The complete execution log file is securely archived inside the `/benchmarks` directory.*
 
 ## APACHE
 ### Test Log Insights (Mean across 10 million cycles):
@@ -61,9 +61,6 @@ Modern high-density accelerator frameworks, such as the **NVIDIA Blackwell B300 
 * **Core Processing Latency:** 12.11 ms (Mean)
 * **Mathematical Ingestion Overhead:** 0.086 ms per transaction
 * **Total Transferred Volume:** 5.81 GB of signed, cryptographically verified telemetry data
-
-
-To evaluate absolute resource efficiency, the runtime environment was intentionally restricted to a **legacy consumer setup (2-core Intel i3-4100 CPU from 2014) over a standard USB mobile network modem**.
 
 ---
 
