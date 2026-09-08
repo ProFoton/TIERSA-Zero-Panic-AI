@@ -39,7 +39,7 @@ Modern high-density accelerator frameworks, such as the **NVIDIA Blackwell B300 
 ## 📊 Industrial Benchmark Records (Production Network Validation)
 To validate the extreme architectural efficiency of the compiled asynchronous Rust (`tokio`) state engine, the core proxy daemon was subjected to a rigorous network endurance marathon over a physical network interface using the modern `wrk` tool.
 
-The runtime environment was intentionally restricted to a **legacy consumer setup (2-core Intel i3-4100M CPU from 2014) over a standard USB mobile network modem**. Under a punishing network load of **10 parallel threads and 500 concurrent connections**, the TIERSA™ core safely utilized the host CPU at a stable **99% capacity** with zero lock contention.
+The runtime environment was intentionally restricted to a **legacy consumer setup (2-core Intel i3-4100M CPU from 2014) over a standard USB mobile network modem**. Under a punishing network load of **2 parallel threads and 1500 concurrent connections**, the TIERSA™ core safely utilized the host CPU at a stable **99% capacity** with zero lock contention.
 
 ### Verified Test Log Insights (Official wrk Network Metrics):
 * **Sustained Production Throughput:** 68,709 Requests Per Second (RPS) maintained continuously over the network.
