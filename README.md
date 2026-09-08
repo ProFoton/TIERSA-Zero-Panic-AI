@@ -96,8 +96,6 @@ Version v5.0 transitions cluster hardware safety from reactive thresholding into
   Interfaces directly with Linux sysfs paths (`/sys/class/thermal/thermal_zone0/temp`) to compute independent Arrhenius degradation logs for orchestration processors (Xeon/EPYC/Grace).
 * **⚙️ Mechanical Fan Aging Compensator**
   Models non-linear fan bearing wear caused by vibrational stress, preemptively accounting for airflow attenuation.
-* **🔒 Zero-Disk Crypto-Stamp**
-  Injects a real-time SHA-256 signature (`# tiersa_signature`) into Prometheus HTTP response feeds at RAM speed. Every cryptographic signature is unalterably bound to the creator's identity: `signed_by_evgeny_baydikov`.
 
 ---
 
