@@ -251,11 +251,19 @@
             const subnetMask = document.getElementById("subnet_mask").value;
             const gpuCount = parseInt(document.getElementById("gpu_count").value, 10);
 
-            // Жесткая проверка бизнес-логики: блокировка лимита Pilot-версии на уровне фронтенда
             if (gpuCount > maxAllowedGpu) {
                 alert(`🚨 ERROR: Selected licensing profile restricts deployment to a maximum of ${maxAllowedGpu} GPU units. Please select Enterprise Production or contact the Lead Architect.`);
                 return;
             }
+
+            // --- МАТЕМАТИЧЕСКИЙ АППАРАТ ЭФФЕКТИВНОСТИ CAPEX ---
+            const basePricePerGpu = (gpuCount < 5000) ? 700 : 350;
+            const projectedLicense = gpuCount * basePricePerGpu;
+            
+            // Расчет спасенного железа на основе AFR из Вашего технического доклада
+            const baseAfrReduction = (gpuCount < 5000) ? 0.068 : 0.086; 
+            const nominalGpuCost = 35000;
+            const savedCapEx = Math.round(gpuCount * nominalGpuCost * baseAfrReduction);
 
             const email = "dantesevg@gmail.com";
             const subject = encodeURIComponent("🚨 Key Request: TIERSA™ Tungsten Carbide v5.0");
@@ -267,13 +275,17 @@
                 "- Datacenter Context Label: " + dcLabel + "\n" +
                 "- Target Silicon Architecture: " + hwProfile + "\n" +
                 "- Target Cluster Subnet (Air-Gap Lock): " + subnetMask + "\n" +
-                "- Allocated GPU/TPU Capacity: " + gpuCount + " Units (Billed at $0.05/Hour base)\n\n" +
+                "- Allocated GPU/TPU Capacity: " + gpuCount.toLocaleString() + " Units\n\n" +
+                "--- PRELIMINARY ECONOMIC ESTIMATE (VALUE-BASED) ---\n" +
+                "- Projected Annual License Cost: $" + projectedLicense.toLocaleString() + " USD\n" +
+                "- Estimated Retained Asset Value (1-Year Guard): $" + savedCapEx.toLocaleString() + " USD\n\n" +
                 "Please generate the cryptographically signed RSA-PSS (*.key) license manifest bound strictly to this network subnet interface and hardware volume.\n\n" +
                 "Best regards,"
             );
             
             window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
         }
+
     </script>
 
 </body>
