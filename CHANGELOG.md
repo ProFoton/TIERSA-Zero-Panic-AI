@@ -4,22 +4,23 @@
 ## - 2026-9-7
 All notable changes to the TIERSA™ core will be documented in this file.
 
+
+
 ## 🛠️ OFFICIAL CHANGELOG
 * **[ARCHITECTURAL TRIUMPH] UDP-Push Engine:** Completely removed the Axum Prometheus text scraper router to enforce pure hard real-time compliance. Telemetry is now decoupled and safely streamed as lightweight UDP packets.
 * **[REMOVED] Text-Formatting Overhead:** Stripped out all dynamic string allocations, pool summaries, watchdog strings, and heavy metadata labels from the core computational path to eliminate lock starvation (`RwLock`).
 * **[REMOVED] Zero-Disk Crypto-Stamp:** Excised the SHA-256 log signing overhead. The product is now fully protected under a hardened, commercial **"AS IS"** legal framework inside `LICENSE.md` and `LICENSE.ru.md`.
 * **[CLEANED] LLVM Binary Sterilization:** Completely removed the external `sha2` crate from `Cargo.toml`. Verification routines are now exclusively handled by built-in lightweight flags of the `rsa` crate, achieving a clean compile with zero compiler warnings or errors.
 
+---
 
 # 🚀 TIERSA™ Core v4.0.0 — Official Release Notes
 
-We are proud to announce the final production release of **TIERSA™: Zer0-Panic AI** (v4.0.0 Platinum). This release marks a monumental evolution from the v3.5-stable branch, morphing a local node monitoring agent into a complete, non-intrusive, predictive hardware insurance middleware for next-generation AI infrastructures (**NVIDIA Blackwell B200/B300** and **Google TPU Trillium/Ironwood**).
+We are proud to announce the final production release of **TIERSA™: Zer0-Panic AI** (v4.0.0). This release marks a monumental evolution from the v3.5-stable branch, morphing a local node monitoring agent into a complete, non-intrusive, predictive hardware insurance middleware for next-generation AI infrastructures (**NVIDIA Blackwell B200/B300** and **Google TPU Trillium/Ironwood**).
 
 With all 5 new enterprise-grade predictive and physical protection engines packed into the monolithic Rust core, the release binary retains a purely symbolic and optimized footprint of exactly **1.11 MB**, while breaking historical throughput records at **10,027.73 RPS** on half-million ultra-marathon request stress tests.
 
----
-
-## 🛠 WHAT'S NEW IN v4.0.0 PLATINUM (Changelog vs v3.5)
+## 🛠 WHAT'S NEW IN v4.0.0 (Changelog vs v3.5)
 
 ### 1. 🏎️ Non-Blocking Async Token Pacing Engine
 * **Feature:** Implemented an adaptive token delivery pacing mechanism inside the hot `/v1/completions` pathway.
