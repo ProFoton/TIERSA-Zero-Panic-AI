@@ -115,7 +115,7 @@ Place the pre-compiled `t_rust_core` binary from the **Releases** tab (Version `
 
 ```bash
 ~/TIERSA/
-├── t_rust_core        # Stripped core binary file (1.17 MB)
+├── t_rust_core or tiersa_core     # Stripped core binary file (1.17 MB)
 └── Company_license.key # Personal validation key (cryptographically bound to author's signature)
 ```
 
