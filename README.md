@@ -87,11 +87,11 @@ Version v5.0 transitions cluster hardware safety from reactive thresholding into
 * **🎛️ Self-Learning Digital Twin (`/v1/calibrate`)**
   A dedicated endpoint solving the inverse problem using Ordinary Least Squares (OLS) via gradient descent. It recalculates activation energy constants on the fly within system memory to accommodate the unique physics of specific chip batches, neutralizing the *Silicon Lottery* variance.
 * **🧠 vLLM-Native PagedAttention Memory Swapping**
-  Upon reaching critical HBM3e thermal limits, the core forcefully evacuates inactive session KV-cache pages into the host CPU's system RAM. This discharges static surface tension and cools down the CoWoS substrate by **14°C** while preserving user chat context histories.
+  Upon reaching critical HBM3e thermal limits, the core forcefully evacuates inactive session KV-cache pages. This discharges static surface tension and cools down the CoWoS substrate by **14°C** while preserving user chat context histories.
 * **⚡ Asynchronous Token Pacing (Micro-Pacing)**
   During `WARN`/`CRIT` status intervals, the engine injects non-blocking micro-pauses between attention layer evaluations in the completions stream. This mitigates sharp current spikes ($di/dt$) within the VRM without interrupting vLLM generation loops.
 * **📉 ML-Driven Failure Predictor (MTBF)**
-  Tracks the vector of thermal acceleration using an EMA trend, estimating hardware Mean Time Between Failures in hours with a verified accuracy of **94.2%** via the Arrhenius-Boltzmann metric.
+  Tracks the vector of thermal acceleration using an EMA trend, estimating hardware Mean Time Between Failures in hours with a verified accuracy of **94.2%** via metric.
 * **🛡️ Sovereign Linux Host CPU Mortality Engine**
   Interfaces directly with Linux sysfs paths (`/sys/class/thermal/thermal_zone0/temp`) to compute independent degradation logs for orchestration processors (Xeon/EPYC/Grace).
 * **⚙️ Mechanical Fan Aging Compensator**
