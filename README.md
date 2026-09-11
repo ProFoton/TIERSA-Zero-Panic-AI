@@ -1,17 +1,26 @@
 # 🛰️ TIERSA™-Zer0-Panic-AI™: Tungsten Carbide v5.5 (SoA HYPER-SCALE EDITION)
 
 **Autonomous Self-Learning Proactive Infrastructure Protection Software for High-Density AI Clusters**  
-<sub>Engineered Specifically for NVIDIA Blackwell (B200/B300), Hopper (H100/H200), and Google TPU Trillium (v6e/v7x Ironwood) Systems</sub>
 
-<p align="center">
-  <img src="https://shields.io" alt="Rust">
-  <img src="https://shields.io" alt="Environment">
-  <img src="https://shields.io" alt="Security">
-  <img src="https://shields.io" alt="Size">
-  <img src="https://shields.io" alt="Zenodo DOI">
-</p>
+<table>
+  <tr>
+    <td bgcolor="#E06611"><b>📦 LANGUAGE:</b> Rust 1.75+</td>
+    <td bgcolor="#111111"><b>⚡ ENGINE:</b> Tokio Async</td>
+    <td bgcolor="#0052CC"><b>🌐 ENVIRONMENT:</b> Bare-Metal | Linux</td>
+  </tr>
+  <tr>
+    <td bgcolor="#CC0000"><b>🔒 SECURITY:</b> Air-Gapped</td>
+    <td bgcolor="#28A745"><b>💾 SIZE:</b> 1.17 MB (Stripped)</td>
+    <td bgcolor="#6F42C1"><b>📄 LICENSE:</b> Proprietary EULA</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFB703" colspan="2" align="center" style="color: black;"><b>🚀 COMPLETIONS INFERENCE:</b> 75,845.28 RPS</td>
+    <td bgcolor="#023E8A" align="center"><b>🎯 TARGETS:</b> Blackwell / TPU</td>
+  </tr>
+</table>
 
 ---
+
 
 ## 📋 Project Overview
 
