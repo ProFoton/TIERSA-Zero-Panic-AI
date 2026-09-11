@@ -23,11 +23,13 @@
 * **Commercial Nomenclature:** The Author operates under the commercial trade names **TIERSA™**, **TIERSA™-Zero-Panic-AI™**, and **TIERSA Sys**. Any reference to these entities in this document, the source code, binary metadata, network headers, or telemetry metrics implies direct and indivisible assignment of rights to **Evgeny Baydikov**.
 * **Corporate Succession Clause:** In the event that the Author establishes, registers, or incorporates a dedicated corporate legal entity (e.g., *TIERSA Inc.*, *TIERSA LLC*, or *TIERSA Ltd.*), all titles, copyrights, and intellectual property vectors mentioned herein shall seamlessly transition to said legal entity without requiring modification of the compiled binary structures or historical license manifests.
 
+
 ### 2. 📜 LICENSE GRANT AND IMMUTABLE LIMITATIONS
 This Software is **licensed, not sold**. Based on a valid cryptographic license manifest (`*.key`) issued directly and signed by the Author, the Licensee is granted:
 * A **non-exclusive**, non-transferable, revocable, and temporary right to deploy the compiled binary file.
 * Deployment rights exclusively within the **authorized isolated network perimeter** (Air-Gapped environment).
 * Operation strictly capped by the hardcoded capacity limits of the AI cluster (**restricted by the specific number of physical GPU/TPU units** designated in the `.key` manifest).
+
 
 ### 3. 🚫 STRICT PROHIBITIONS, BREACHES, AND LIQUIDATED DAMAGES
 
@@ -38,6 +40,7 @@ This Software is **licensed, not sold**. Based on a valid cryptographic license 
 | **3.3** | **Unauthorized Replication & Branding Abuse** | Copying, cloning, distributing, renting, sublicensing, hosting this software as a managed service (SaaS/PaaS), or exploiting the trademarks **TIERSA™** and **Zero-Panic-AI™** for any unauthorized commercial branding or derivative works is strictly prohibited. |
 | **3.4** | **Bypassing Capacity & Running Without License** | Any attempt to bypass the built-in **RSA-PSS** cryptographic validation cycle, forge capacity metrics, or execute/operate the binary file without a valid, unexpired, and Author-signed cryptographic license file (`*.key`) is a critical breach. |
 
+
 #### 3.5 💸 Financial Penalties and Liquidated Damages
 The Licensee explicitly acknowledges that any breach of Section 3 will cause irreparable economic and intellectual harm to the Author. Therefore, the Licensee agrees to the following **strictly enforceable contract penalties (Liquidated Damages)**, payable immediately upon detection of the violation:
 
@@ -47,13 +50,16 @@ The Licensee explicitly acknowledges that any breach of Section 3 will cause irr
 
 *The collection of Liquidated Damages does not preclude the Author from seeking further injunctions, actual economic damages, or criminal prosecution under applicable copyright and intellectual property laws.*
 
-### 4. 🧠 INTELLECTUAL PROPERTY AND METRIC SIGNATURES
-All titles, international copyrights, patents, trade secrets, and intellectual property rights within the Software remain the **sole and exclusive property of Evgeny Baydikov**. 
 
-This protection encompasses, but is not limited to:
-* Adaptive token pacing and micro-pacing algorithms.
-* Kalman filters tailored for accelerator thermal zones.
-* vLLM-Native PagedAttention memory swapping architectures.
+### 4. 🧠 INTELLECTUAL PROPERTY AND DIGITAL SIGNATURES
+
+All title, ownership rights, international copyrights, patents, trade secrets, and intellectual property rights within the Software shall remain the sole and exclusive property of Evgeny Baydikov.
+
+This protection fully extends to, but is not limited to:
+- Proprietary algorithms for predictive adaptive allocation and micro-pacing of token streams on the hot execution path.
+- Atomic mathematical models for deterministic telemetry hardware-noise filtering within the thermal zones of computational accelerators.
+- Proprietary architecture for dynamic multi-threaded cascaded memory swapping and low-level page management of AI-cluster execution contexts.
+
 
 ### 5. ⚠️ FULL DISCLAIMER OF WARRANTY ("AS IS")
 THE SOFTWARE IS PROVIDED **"AS IS"**, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
@@ -65,6 +71,7 @@ Under no circumstances shall the Author (**Evgeny Baydikov**) or **TIERSA™-Zer
 * 📉 Premature reduction of Mean Time Between Failures (**MTBF**).
 
 *The Licensee assumes all operational risks associated with real-time hardware thermal mitigation.*
+
 
 ### 6. ⏳ TERMINATION AND LIQUIDATION
 This License terminates **automatically, instantly, and without prior notice** from the Author if:
