@@ -14,8 +14,8 @@
     <td bgcolor="#6F42C1"><b>📄 LICENSE:</b> Proprietary EULA</td>
   </tr>
   <tr>
-    <td bgcolor="#FFB703" colspan="2" align="center" style="color: black;"><b>🚀 COMPLETIONS INFERENCE:</b> 80000+ RPS</td>
-    <td bgcolor="#023E8A" align="center"><b>🎯 TARGETS:</b> Blackwell / TPU</td>
+    <td bgcolor="#FFB703" colspan="2" align="center" style="color: black;"><b>🚀 COMPLETIONS INFERENCE:</b> 80 000+ RPS</td>
+    <td bgcolor="#023E8A" align="center"><b>🎯 TARGETS:</b> Blackwell / TPU / CPU / GPU / CoWoS / HBM / VRM </td>
   </tr>
 </table>
 
