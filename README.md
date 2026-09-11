@@ -10,7 +10,7 @@
   </tr>
   <tr>
     <td bgcolor="#CC0000"><b>🔒 SECURITY:</b> Air-Gapped</td>
-    <td bgcolor="#28A745"><b>💾 SIZE:</b> 1.17 MB (Stripped)</td>
+    <td bgcolor="#28A745"><b>💾 SIZE:</b> 1.15 MB (Stripped)</td>
     <td bgcolor="#6F42C1"><b>📄 LICENSE:</b> Proprietary EULA</td>
   </tr>
   <tr>
